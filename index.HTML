@@ -5,151 +5,224 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>static-comp-3</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css"></link>
 </head>
 
 <body>
-  
-<aside class="side-nav">
-  <section class="top-photo-section">
-    <img src="" alt="">
-    <p>Newton Barley</p>
+
+  <aside class="side-nav">
+    <div class="profile-pic-container">
+    </div>
+
+  <div class="side-nav-menu">
+    <p class= "name">Tom Thompson</p>
+  </div>
+
+  <section class="side-nav-menu">
+    <p class="side-nav-title">Main</p>
+
+    <a class="side-nav-link side-nav-home"href="#">home</a>
+    <a class="side-nav-link side-nav-jobs"href="#">jobs</a>
+    <a class= "side-nav-link side-nav-resumes" href="#">resumes</a>
+    <a class= "side-nav-link side-nav-tasks"href="#">tasks</a>
+    <a class= "side-nav-link side-nav-calendar"href="#">calendar</a>
   </section>
-  <section class="side-main-nav">
-    <h3>Main</h3>
-    <a href="#">home</a>
-    <a href="#">jobs</a>
-    <a href="#">resumes</a>
-    <a href="#">tasks</a>
-    <a href="#">calendar</a>
+
+  <section class="side-nav-menu">
+    <p class="side-nav-title">Admin</p>
+
+    <a class= "side-nav-link side-nav-users"href="#">users</a>
+    <a class= "side-nav-link side-nav-locations"href="#">locations</a>
+    <a class= "side-nav-link side-nav-workflows"href="#">workflows</a>
+    <a class= "side-nav-link side-nav-jobboards"href="#">job boards</a>
+    <a class= "side-nav-link side-nav-social"href="#">social</a>
   </section>
-  <section>
-    <h3>Admin</h3>
-    <a href="#">users</a>
-    <a href="#">locations</a>
-    <a href="#">workflows</a>
-    <a href="#">job boards</a>
-    <a href="#">social</a>
-  </section>
-  <section>
-    <h3>Categories</h3>
-    <a href="#">Administrative</a>
-    <a href="#">Design</a>
-    <a href="#">Executive</a>
-    <a href="#">Human Resources</a>
+
+  <section class="side-nav-menu">
+    <p class="side-nav-title">Categories</p>
+
+    <a class= "side-nav-link side-nav-administrative"href="#">Administrative</a>
+    <a class= "side-nav-link side-nav-design"href="#">Design</a>
+    <a class= "side-nav-link side-nav-executive"href="#">Executive</a>
+    <a class= "side-nav-link side-nav-human-resources"href="#">Human Resources</a>
   </section>
 
 </aside>
-  <header>
-    <section class="top-navigation">
-      <button type="button" name="side-nav-button"></button>
-      <input class="search-box" type="text" placeholder="Search for a job, task or resume" name="" value="">
-      <a class="friend-request- link" href="#"></a>
-      <a class="checklist-link" href="#"></a>
-      <a class="grid-link" href="#"></a>
 
-  </section>
+<main>
+  <header>
+    <section class="top-navigation-section">
+
+      <button class="top-navigation-button side-menu-trigger" type="button" name="side-nav-link-button"><img class="icon" src="assets/side-nav-menu-trigger.svg" alt="list-icon"></button>
+
+      <input class="top-search-box" type="text" placeholder="Search for a job, task or resume" name="top nav search">
+
+      <button class="top-navigation-button top-friend-request" type="button" name="friend-request"><img class="icon" src="assets/023-add-user.svg" alt="friend-request icon"></button>
+
+      <button class="top-navigation-button top-checklist -button" type="checklist" name="checklist"><img class="icon" src="assets/025-list.svg" alt="checklist-icon"></button>
+
+      <button class="top-navigation-button top-grid-button" type="button" name="grid"><img class="icon" src="assets/026-big-and-small-dots.svg" alt="grid-icon"></button>
+
+      <a class="top-navigation-link grid-link" href="#"></a>
+
+    </section>
 
     <section class="main-heading">
-      <h1>Customer Service Representative</h1>
-      <p>Somers, CT</p> <a href="#">Preview this post</a>
-      <button class="open-button" type="button" name="button">open</button>
-      <button class="tag-button" type="button" name="button"></button>
-      <button class="edit-button" type="button" name="button"></button>
-      <button class="trash-button" type="button" name="button"></button>
+      <div class="main-title">
+        <h2 class="job-title">Customer Service Representative</h2>
+        <p class="location"><img class="small-icon" src="assets/heading-location-arrow-dark.svg" alt="location icon">Somers, CT  <a href="#">Preview this post</a></p>
+      </div>
+
+      <section class="main-heading-button-section">
+        <button class="open-button heading-button" type="button" name="open-button"><img class="green-dot-icon" src="assets/003-green-dot.svg" alt="green dot icon">open</button>
+
+        <button class="tag-button heading-button" type="button" name="tag-button"><img class="heading-icon" src="assets/ribbon.svg" alt="tag-icon"></button>
+
+        <button class="edit-button heading-button" type="button" name="edit-button"><img class="heading-icon" src="assets/heading-edit-pencil.svg" alt="edit icon"></button>
+
+        <button class="trash-button heading-button" type="button" name="trash-button"><img class="heading-icon" src="assets/heading-delete-trash.svg" alt="delete icon"></button>
+      </section>
+
     </section>
-    <nav class="lower-navigation">
+
+
+
+    <nav class="main-heading-lower-navigation">
       <a class="summary-link" href="#">summary</a>
       <a class="applicants-link" href="#">applicants</a>
-      <a class="job-board-link" href="#">"job board"</a>
+      <a class="job-board-link" href="#">job board</a>
       <a class="interiews-link" href="#">interviews</a>
       <a class="activity-link" href="#">activity</a>
       <a class="broadcast-link" href="#">broadcast</a>
       <a class="notifications-link"href="#">notifications</a>
+      <a class="main-heading-lower-nav-more" href="#">more</a>
     </nav>
 
-</header>
+  </header>
+<section class="lower-section-container">
 
 
+<section class="graph-container">
 
-  <section class="graphs-section">
-    <div class="applicants-graph">applicants</div>
-    <div class="interviews-graph">interviews</div>
-    <div class="forwards-graph">forwards</div>
-    <div class="bar-graph"></div>
-    <div class="graph-buttons">
-      <button class="totals-button" type="button" name="button">TOTALS Out of 5,231 views</button>
-      <button class="applicants-button" type="button" name="button">applicants/day</button>
+  <section class="circle-graphs-section">
+    <div class="circles">
+      <div class="graph applicants-graph text-container"><div class="applicants-text-container text-container"><p class="number">3,154</p><p class="category">applicants</p>
+      </div></div>
+      <div class="graph interviews-graph"><div class="interviews-text-container text-container"><p class="number">1,546</p><p class="category">interviews</p>
+      </div></div>
+      <div class="graph forwards-graph"><div class="forwards-text-container text-container"><p class="number">912</p><p class="category">forwards</p>
+      </div></div>
     </div>
+    <button class="graph-totals-button" type="button" name="button">TOTALS Out of 5,231 views</button>
   </section>
 
-  <section class="table-section">
-    <table>
-      <th>
-        <p>job description</p>
-        <button class="table-edit-button" type="button" name="button">edit</button>
-      </th>
+  <section class="bar-graph-section">
+    <div><img class="bar-graph" src=assets/bar-chart.png alt="bar-graph.png">
+
+    </div>
+      <button class="graph-applicants-button" type="button" name="button">applicants/day</button>
+  </section>
+</section>
+
+<div class="divider"><hr><img class="icon divider-icon"       src="assets/001-up-chevron-button.svg" alt="arrow icon"><hr>
+</div>
+
+  <section class="bottom-container">
+
+
+  <table>
+    <thead>
       <tr>
-        <td>position title</td>
+        <th colspan="2">job description
+        <button class="table-edit-button" type="button" name="button"><img class="table-edit-icon" src="assets/004-light-pencil-icon.svg" alt="">edit</button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>position title</th>
         <td>Customer Service Representative</td>
       </tr>
       <tr>
-        <td>location</td>
+        <th>location</th>
         <td>Somers, Ct</td>
       </tr>
       <tr>
-        <td>employment type</td>
+        <th>employment type</th>
         <td>Full-time</td>
       </tr>
       <tr>
-        <td>Status</td>
+        <th>Status</th>
         <td>Open</td>
       </tr>
       <tr>
-        <td>Description</td>
-        <td>The Customer Service Representative is responsible interacting with and providing qua;ity assistac to all the radical customers, responsible for keeping up-to-date on the various product shizzle; helpin the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
+        <th>Description</th>
+        <td>The Customer Service Representative is responsible interacting with and providing quality assistance to all the radical customers, responsible for keeping up-to-date on the various product shizzle; helpin the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
       </tr>
       <tr>
-        <td>hiring lead</td>
+        <th>hiring lead</th>
         <td>Tom Tizzy</td>
       </tr>
-      <td>approved salary</td>
+      <th>approved salary</th>
       <td>$58,000</td>
-    </table>
-  </section>
+    </tbody>
+
+  </table>
+
+
+<!--LOWER LINK SECTION-->
+
+
   <section class="lower-link-section">
-    <a class="facebook-link" href="#">Post to Facebook</a>
-    <a class="twitter-link"href="#">Tweet this Job</a>
-    <a class="linkedin-link"href="#">Post to Linkedin</a>
+
+    <section class="social-media-link-container">
+
+      <a class="facebook-link lower-link" href="#">Post to Facebook</a>
+
+      <a class="twitter-link lower-link"href="#">Tweet this Job</a>
+
+      <a class="linkedin-link lower"href="#">Post to Linkedin</a>
+
+    </section>
+
     <section class="link-to-this-job-section">
-    <h3>Link to this Job</h3>
-    <p>Taxidermy pickled scenester farm-to-table, skateboard cardigan sriracha polaroid.</p>
-    <input class="job-link-input" type="text" name="" value="">
-    <form class="input job-link-input" action="/action_page.php">
-    </form>
-    <button class="copy-button" type="button" name="button">Copy</button>
+      <p class="lower-link-section-title"><img class="lower-link-icon" src="assets/004-earth-globe.svg" alt="globe icon">Link to this Job</p>
+      <p class="lower-link-section-text">Taxidermy pickled scenester farm-to-table, skateboard cardigan.  Pok pok tacos knausgaard, vexillologist wolf ennui hell.</p>
+      <div class="lower-link-input-container">
+        <input class="lower-link-input-text" type="text" name="job-link-input-field">
+        <form class="input job-link-input" action="/action_page.php">
+        </form>
+        <button class="copy-button" type="button"   name="copy-button">Copy</button>
+      </div>
+      <hr class="lower-link-hr">
     </section>
 
     <section class="button-widget-section">
-    <h3>Use the Button Widget</h3>
-    <p>Copper mug fingerstache cold-pressed enamel pin. Leggings vape narwhal, vegan craft beer lo-fi.<p>
-    <input class="button-widget-input" type="text" name="" value="">
-    <form class="input-job-link-input" action="/action_page.php">
-    </form>
-    <button class="copy-button" type="button" name="button">Copy</button>
+      <p class="lower-link-section-title"><img class="lower-link-icon" src="assets/widget.svg" alt="widget icon">Use the Button Widget</p>
+      <p class="lower-link-section-text">Copper mug fingerstache cold-pressed enamel pin. Leggings vape.  Pickled lyft banh mi celiac la croix.<p>
+      <div class="lower-link-input-container">
+        <input class="lower-link-input-text" type="text" name="button-widget-input">
+        <form class="input-job-link-input" action="/action_page.php">
+        </form>
+        <button class="copy-button" type="button" name="button">Copy</button>
+      </div>
+      <hr class="lower-link-hr">
     </section>
 
     <section class="upload-resume-section">
-    <h3>Upload Resumes by Email</h3>
-    <p>Subway tile polaroid cardigan direct trade pickled 8-bit, heirloom distillery letterpress actually deep v edison bulb.<p>
-    <input class="upload-resume-input" type="text" name="" value="">
-    <form class="upload-resume-input" action="/action_page.php">
-    </form>
+      <p class="lower-link-section-title"><img class="lower-link-icon" src="assets/003-paper-plane.svg" alt="airplane icon">Upload Resumes by Email</p>
+      <p class="lower-link-section-text">Subway tile polaroid cardigan direct trade pickled 8-bit, heirloom.  Vexillologist locavore occupy hexagon, drinking.<p>
+      <input class="upload-resume-input" type="text" name="" value="">
+      <form class="upload-resume-input" action="/action_page.php">
+      </form>
     </section>
 
   </section>
+</section>
+</section>
 
-
+  </main>
 </body>
 </html>

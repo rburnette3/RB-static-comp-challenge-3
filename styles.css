@@ -191,9 +191,6 @@ header{
 .main-heading-lower-nav-more{
   display:none;
 }
-a:hover{
-  color:#00A8EF;
-}
 
 .main-heading-lower-navigation a:hover {
   color:#6F7E95;
@@ -222,7 +219,6 @@ a:hover{
 .green-dot-icon{
   width:8px;
   margin-right: 3px;
-
 }
 
 .heading-icon{
@@ -244,9 +240,8 @@ main{
   margin-left: 5px;
   padding-left: 15px;
 }
-.preview-text: hover{
+.preview-text:hover{
   color:#00A8EF;
-  width:100px
 }
 
 .divider{
